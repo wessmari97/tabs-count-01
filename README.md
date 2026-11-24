@@ -14,4 +14,4 @@ Run it with Node 22:
 node main.ts
 ```
 
-It writes `entry.txt` to `$OUTPUT_DIR` (or `/output` by default), deterministically — two runs produce byte-identical output.
+It writes `entry.txt` to `$OUTPUT_DIR` (or `/output` by default), deterministically — two runs produce byte-identical output. Before writing, the program checks the count is digits only and 1–5 characters long, matching the bounty's gate, so it can never submit an invalid entry.
